@@ -1,0 +1,3 @@
+Dirac 1.0 1
+Feynman 2.0 1
+Bohr 3.0 1
