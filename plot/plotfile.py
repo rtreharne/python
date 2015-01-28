@@ -24,18 +24,14 @@ header = header.split(',')
 skip = 0
 
 for i in range (0,len(lst)):
-  if lst[i].isalpha() == True:
-    skip = 1
+      if lst[i].isalpha() == True:
+              skip = 1
 
-fname = 'data.csv'
-
-x = loadtxt(fname, unpack = True, usecols = [0], skiprows = skip)
-y = loadtxt(fname, unpack = True, usecols = [1], skiprows = skip) 
+x = loadtxt(filename, unpack = True, usecols = [0], skiprows = skip)
+y = loadtxt(filename, unpack = True, usecols = [1], skiprows = skip) 
 
 plot(x,y, linestyle, color='red')
 xlabel(header[0])
 ylabel(header[1])
 
 show()
-
-
